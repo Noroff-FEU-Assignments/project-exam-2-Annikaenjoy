@@ -32,7 +32,7 @@
 }
 
 .nav_link:hover {
-  color: $color-white !important;
+  color: $color-black !important;
   text-decoration: none;
   background-color: $color-secondary;
 }
@@ -62,6 +62,6 @@
   }
   .nav_link:hover {
     color: $color-secondary !important;
-    background-color: $color-primary;
+    background-color: $color-black;
   }
 }

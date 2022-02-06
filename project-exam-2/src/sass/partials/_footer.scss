@@ -1,0 +1,30 @@
+.fi_icon1 {
+  font-size: 30px;
+  margin: 10px;
+}
+.fi_icon2 {
+  font-size: 30px;
+  margin: 10px;
+}
+.fi_icon3 {
+  font-size: 30px;
+  margin: 10px;
+}
+h6 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.line {
+  margin: 20px 0 0 0;
+  width: 100%;
+  border-top: 0.5px solid $color-white;
+}
+.footer_devline {
+  display: flex;
+  margin: 15px;
+  justify-content: space-between;
+}
+.copyright {
+  margin: 15px;
+  text-align: end;
+}

@@ -12,20 +12,39 @@ h1 {
 }
 h2 {
   font-family: $font-primary;
-  font-size: 60px;
-  color: $color-secondary;
-  font-weight: 900;
-  position: absolute;
-  top: 25px;
-  width: 100%;
-  z-index: 100;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: $color-black;
+  font-weight: 700;
 }
 h3 {
   font-family: $font-primary;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
+  color: $color-black;
+  margin-top: 20px;
+}
+h4 {
+  font-family: $font-primary;
+  font-size: 21px;
+  font-weight: 600;
+  color: $color-white;
+  text-transform: uppercase;
+}
+h5 {
+  font-family: $font-primary;
+  font-size: 21px;
+  font-weight: 600;
   color: $color-white;
 }
+h6 {
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
 a {
   color: $color-link;
   text-decoration: none;
@@ -37,12 +56,16 @@ p {
   font-size: 16px;
   font-weight: 400;
 }
-@media (min-width: 600px) {
-  h1 {
-    font-size: 100px;
-  }
-  h2 {
-    font-size: 100px;
-    top: 35px;
-  }
+li {
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer,
+p {
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  list-style-type: none;
 }

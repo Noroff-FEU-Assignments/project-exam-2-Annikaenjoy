@@ -1,0 +1,20 @@
+.services_container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.card-img-overlay {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: unset;
+  background-color: rgba($color-black, $alpha: 0.7);
+}
+.card {
+  border: none;
+  border-radius: 0;
+  margin: 10px;
+}
+.card-img {
+  border: none;
+  border-radius: 0;
+}

@@ -34,6 +34,9 @@ const NavBar = (props) => {
                 Våre biler
               </Link>
               <Link className="nav_link" exact to="/bestilling">
+                Bestilling
+              </Link>
+              <Link className="nav_link" exact to="/kontakt">
                 Kontakt oss
               </Link>
             </Nav>
