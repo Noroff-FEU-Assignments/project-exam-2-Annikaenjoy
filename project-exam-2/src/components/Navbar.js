@@ -7,7 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
 // Images
-import Logo from "../assets/images/Autonext_hvit.png";
+import Logo from "../assets/images/Autonxt_hvit.png";
 
 const NavBar = (props) => {
   return (
