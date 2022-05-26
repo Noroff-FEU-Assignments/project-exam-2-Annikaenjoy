@@ -13,7 +13,6 @@ import Vegard from "../assets/images/vegardengoy.png";
 const Team = () => {
   return (
     <>
-      <h2 className="contact_h2">Kontakt oss</h2>
       <Container className="team-container">
         <Row className="justify-content-md-center">
           <Col className="team-col" md={3}>

@@ -6,13 +6,15 @@
 }
 h1 {
   font-family: $font-primary;
-  font-size: 60px;
-  color: $color-white;
-  font-weight: 900;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: $color-black;
+  font-weight: 700;
+  margin: 40px;
 }
 h2 {
   font-family: $font-primary;
-  font-size: 48px;
+  font-size: 28px;
   text-transform: uppercase;
   color: $color-black;
   font-weight: 700;

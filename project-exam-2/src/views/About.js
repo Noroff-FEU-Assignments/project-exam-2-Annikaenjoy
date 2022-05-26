@@ -1,19 +1,20 @@
 import React from "react";
-
-import NavBar from "../components/Navbar";
+import Navbar from "../components/Navbar";
 import Header from "../components/HeaderImage";
 import Heading from "../components/Heading";
 import Team from "../components/Team";
+import Footer from "../components/Footer";
 
-const Contact = (props) => {
+const Admin = (props) => {
   return (
     <>
-      <NavBar />
+      <Navbar />
       <Header />
-      <Heading>Kontakt oss</Heading>
+      <Heading>Om Autonext</Heading>
       <Team />
+      <Footer />
     </>
   );
 };
 
-export default Contact;
+export default Admin;

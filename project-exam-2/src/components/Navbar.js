@@ -1,5 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import AuthContext from "../context/AuthContext";
 
 // React Bootstrap
 import Container from "react-bootstrap/Container";
@@ -10,6 +11,15 @@ import Nav from "react-bootstrap/Nav";
 import Logo from "../assets/images/Autonxt_hvit.png";
 
 const NavBar = (props) => {
+  const [auth, setAuth] = useContext(AuthContext);
+
+  const navigate = useNavigate();
+
+  function logout() {
+    setAuth(null);
+    navigate("/");
+  }
+
   return (
     <>
       <Navbar className="navbar" bg="background" variant="dark" expand="lg">
@@ -39,6 +49,21 @@ const NavBar = (props) => {
               <Link className="nav_link" exact to="/kontakt">
                 Kontakt oss
               </Link>
+              {auth ? (
+                <>
+                  <Link className="nav_link" to="/admin">
+                    Admin
+                  </Link>{" "}
+                  |{" "}
+                  <button type="button" onClick={logout}>
+                    Log out
+                  </button>
+                </>
+              ) : (
+                <Link className="nav_link" to="/login">
+                  Login
+                </Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
