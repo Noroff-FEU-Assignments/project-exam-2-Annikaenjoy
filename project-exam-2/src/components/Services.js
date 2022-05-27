@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 // React Bootstrap
 import Container from "react-bootstrap/Container";
@@ -12,12 +13,22 @@ import Car2 from "../assets/images/car2.jpg";
 import Car3 from "../assets/images/car3.jpg";
 
 const OurServices = (props) => {
+  let navigate = useNavigate();
+  const navigateCars = () => {
+    navigate("/biler");
+  };
+  const navigateServices = () => {
+    navigate("/tjenester");
+  };
+  const navigateOrder = () => {
+    navigate("/bestilling");
+  };
   return (
     <>
       <Container className="services_container" fluid="md">
         <h2>Våre tjenester</h2>
         <Row>
-          <Col md={4}>
+          <Col md={4} onClick={navigateCars}>
             <Card className="bg-dark text-white">
               <Card.Img src={Car3} alt="Card image" />
               <Card.ImgOverlay>
@@ -25,7 +36,7 @@ const OurServices = (props) => {
               </Card.ImgOverlay>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col md={4} onClick={navigateServices}>
             <Card className="bg-dark text-white">
               <Card.Img src={Car1} alt="Card image" />
               <Card.ImgOverlay>
@@ -33,7 +44,7 @@ const OurServices = (props) => {
               </Card.ImgOverlay>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col md={4} onClick={navigateOrder}>
             <Card className="bg-dark text-white">
               <Card.Img src={Car2} alt="Card image" />
               <Card.ImgOverlay>
